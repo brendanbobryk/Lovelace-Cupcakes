@@ -7,7 +7,7 @@ public class App {
     private static int count = 0;
 
     public static void main(String[] args) {
-        String fileName = "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_test_10.json";
+        String fileName = "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_3906.json";
 
         // read cupcake names
         JSONArray cupcakeArray = JSONFile.readArray(fileName);
@@ -67,6 +67,7 @@ public class App {
             while (j >= 0 && arr[j].compareTo(key) > 0) {
                 arr[j + 1] = arr[j];
                 j = j - 1;
+                count += 1;
             }
             arr[j + 1] = key;
         }
