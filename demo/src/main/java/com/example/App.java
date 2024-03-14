@@ -8,6 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         String fileName = "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_3906.json";
+        /*
+         * Demonstration filepath
+         * String fileName =
+         * "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_test_10.json";
+         */
 
         // read cupcake names
         JSONArray cupcakeArray = JSONFile.readArray(fileName);
