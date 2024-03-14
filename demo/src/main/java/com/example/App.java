@@ -8,11 +8,10 @@ public class App {
 
     public static void main(String[] args) {
         String fileName = "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_3906.json";
-        /*
-         * Demonstration filepath
-         * String fileName =
-         * "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_test_10.json";
-         */
+
+        // Demonstration filepath
+        // String fileName =
+        // "C:/Users/Brendan/Documents/GitHub/Lovelace-Cupcakes/demo/src/main/java/com/example/cupcake_test_10.json";
 
         // read cupcake names
         JSONArray cupcakeArray = JSONFile.readArray(fileName);
@@ -76,13 +75,5 @@ public class App {
             }
             arr[j + 1] = key;
         }
-    }
-
-    // swap
-    public static void swap(String[] arr, int a, int b) {
-        String temp;
-        temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
     }
 }
